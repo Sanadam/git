@@ -143,6 +143,7 @@ git checkout new_branch # перейти в указанную ветку
 git checkout -b new_branch # создать новую ветку с указанным именем и перейти в неё
 git merge hotfix # влить в ветку, в которой находимся, данные из ветки hotfix
 git branch -d hotfix # удалить ветку hotfix (если её изменения уже влиты в главную ветку)
+git push origin --delete <branchName> # или (git push origin :<branchName>) удалить ветку <branchName>
 git branch --merged # показать ветки, уже слитые с активной (их можно удалять)
 git branch --no-merged # показать ветки, не слитые с активной
 git branch -a # показать все имеющиеся ветки (в т.ч. на удаленных репозиториях)
